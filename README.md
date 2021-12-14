@@ -1,11 +1,13 @@
 # GroceryTracking
 
-The aim of this program is to take a text file and read from it from a Python Script and use the methods in it to perform actions.
+The aim of this program is to take a text file of Sold Grocery Items and read from it from a Python Script and use the methods in it to get the amount of items sold, check how much of a particular item is sold and display a histogram of the sold items. This will help grocers in deciding what items to have front facing for customers to purchase, as well what they may need to order.
 
-Through out this project, I modified the Python Script to handle different requests from the C++ Program and utilized C++ based Python interpreter from the University to handle different requests. 
+In this program, I modularized the code out to ensure quick compiles and minimal waiting time to test, troubleshoot and validate responsiveness in the program. I also was able to ensure a clean menu that the user always ends up at and quality of input responses from the user to ensure no crashes based on input.
 
-I modified the Python interpreter and changed some of the layout of what it does for the program.
+Areas of improvement are in added functionality of the program, utilizing this code to check against a server, utilizing const and static to secure and lock down certain variables.
 
-Leveraging the Python Script this program is able to handle Reading the text file, pulling a single line value from the text file and converting the text file to a dat file to then be interpreted by the C++ program.
+The most difficult section was resolving the Python Script to print the requested information without the new line indicator '\n' and ensure that it prints out in a 2 clean columns instead of on 2-3 lines of information.
 
-The C++ program is capable of calling the required Python methods and assisting with those methods. It is also setup to read from the dat file, create a vector of the values found in the dat file and then display those as a histogram. After each primary function call in the C++ program it shows the user the main menu again until they exit it of their own desire from the Exit command found in the Main Menu.
+Proper Menu Building would be a critical skill to take over and leveraging if/ofstream to read and write data as applicable.
+
+I structure the code into modularized files and organized code based on function, all user input sections are together, all data processing are another class, there is nothing but the call to start the menu in the main file. This allowed me to keep the compile times down and also ensured that I could more efficently track faults as I would be looking at smaller files for issues.
